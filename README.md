@@ -64,6 +64,33 @@ El código BCD (Binary Coded Decimal) representa cada dígito decimal mediante 4
 
  <img src="documentacion/ejemplo.jpeg" width="200">
 
+
+
+
+**Display de 7 segmentos**
+
+Un display de 7 segmentos está compuesto por 7 LEDs organizados para representar números.
+
+**Tipos:**
+
+* **Ánodo común**
+* **Cátodo común**
+
+En la tarjeta DE10-Lite se utiliza configuración de ánodo común, lo que implica que:
+
+* Un 0 lógico enciende el segmento
+* Un 1 lógico lo apaga
+
+**Implementación en Verilog**
+
+El decodificador se implementa mediante:
+
+* Bloque always
+* Estructura case
+* Salida de 7 bits (a–g)
+
+Ejemplo conceptual:
+
 ## Simulaciones 
 
 ## Evidencias de implementación
