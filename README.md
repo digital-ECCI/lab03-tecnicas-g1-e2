@@ -91,6 +91,18 @@ El decodificador se implementa mediante:
 
 Ejemplo conceptual:
 
+```verilog
+case(bin)
+  4'd0: seg = 7'b1000000;
+  4'd1: seg = 7'b1111001;
+  4'd2: seg = 7'b0100100;
+  4'd3: seg = 7'b0110000;
+  ...
+endcase
+
+
+
+
 ## Simulaciones 
 
 ## Evidencias de implementación
