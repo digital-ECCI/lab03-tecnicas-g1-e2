@@ -62,7 +62,7 @@ El código BCD (Binary Coded Decimal) representa cada dígito decimal mediante 4
 
 **Ejemplo:**
 
- <img src="documentacion/ejemplo.jpeg" width="400">
+ <img src="documentacion/ejemplo.jpeg" width="200">
 
 ## Simulaciones 
 
