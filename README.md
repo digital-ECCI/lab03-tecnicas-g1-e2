@@ -1,9 +1,15 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pilGJxKP)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23383238&assignment_repo_type=AssignmentRepo)
+
 # Lab03 - Decodificador binario a 7 segmentos.
 
 # Integrantes
 
+* [Jareth Santiago Escamilla Marquez](https://github.com/jarethescamilla)
+
+* [Diego Alexander Baron Pacheco](https://github.com/DiegoBp777)
+
+* [Fredy Vicente Patiño Garzon](https://github.com/fredyvipatinoga-crypto)
+
+**Grupo 2 (de los makias)**
 
 # Informe
 
@@ -22,6 +28,41 @@ Indice:
 
 
 ## Documentación de los diseños implementados
+
+* **Descripción general**
+
+En este laboratorio se implementó un decodificador binario a display de 7 segmentos, capaz de visualizar números en formato hexadecimal y decimal utilizando la tarjeta DE10-Lite.
+
+El sistema recibe una entrada binaria de 4 bits y la traduce a las señales necesarias para encender los segmentos correspondientes del display.
+
+* **Parte 1: Código hexadecimal en display**
+
+Se diseñó un sistema que permite visualizar los valores de 0 a F (hexadecimal) en un display de 7 segmentos mediante el uso de switches.
+
+Para esto se utilizó una estructura tipo case en Verilog, donde cada combinación de entrada activa los segmentos necesarios.
+
+* **Parte 2: Visualización de suma de 3 bits**
+
+Se implementó un sistema que:
+
+* Recibe dos números de 3 bits
+* Realiza la suma
+* Muestra el resultado en el display de 7 segmentos
+
+El resultado puede representarse en:
+
+* Decimal
+* Hexadecimal
+
+* **Fundamento teórico**
+
+**Código BCD**
+
+El código BCD (Binary Coded Decimal) representa cada dígito decimal mediante 4 bits.
+
+**Ejemplo:**
+
+ <img src="documentacion/ejemplo.jpeg" width="400">
 
 ## Simulaciones 
 
