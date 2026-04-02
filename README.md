@@ -99,27 +99,82 @@ case(bin)
   4'd3: seg = 7'b0110000;
   ...
 endcase
+```
 
-
-
+***(Este bloque asigna el patrón de segmentos para cada valor de entrada.)***
 
 ## Simulaciones 
+**Descripción**
+
+Se realizaron simulaciones en un entorno como ModelSim para verificar:
+
+Correcta visualización de números 0–F
+Funcionamiento del sumador de 3 bits
+Correspondencia entre entrada binaria y salida del display
+
+**Evidencia**
+
+
+
+
+
+La simulación muestra que el sistema responde correctamente a las entradas, generando la salida adecuada para cada número representado.
 
 ## Evidencias de implementación
 
+* **Montaje en FPGA**
+
+
+
+
+***Figura 1. Implementación del sistema en la FPGA DE10-Lite.***
+
+
+* **Resultado en display**
+
+
+Figura 2. Visualización del resultado en el display de 7 segmentos.
+
+* **Video**
+
+
+
+
 ## Preguntas
 
-Respondan las siguientes preguntas:
+**1. ¿Cuál es el rango máximo de salida de un sumador de 3 bits?**
 
-1. ¿Cuál es el rango máximo de salida de un sumador de 3 bits?
-   
-2. En el diseño del decodificador de 7 segmentos, ¿qué estructura de Verilog modela el comportamiento de un multiplexor? Explique.
+El rango de salida de un sumador de 3 bits va de:
 
-3. ¿Qué tipo de display usa la tarjeta de desarrollo DE10-Lite (ánodo común o cátodo común) y cómo afecta eso al diseño?
+* Mínimo: 0 (000 + 000)
+* Máximo: 14 (111 + 111 = 1110)
+
+Por lo tanto, se requieren 4 bits para representar el resultado.
    
-4. Si se quisiera realizar la implementación del sumador/restador de 4 bits, que cambios deberian hacerse al diseño implementado en la segunda parte de este laboratorio? Explique mediante diagrama de caja negra.
+**2. En el diseño del decodificador de 7 segmentos, ¿qué estructura de Verilog modela el comportamiento de un multiplexor? Explique.**
+
+La estructura que modela un multiplexor en Verilog es el bloque:
+
+```verilog 
+case
+```
+También puede implementarse mediante operadores condicionales (if-else).
+
+**3. ¿Qué tipo de display usa la tarjeta de desarrollo DE10-Lite (ánodo común o cátodo común) y cómo afecta eso al diseño?**
+
+
+
    
-5. ¿Como debería adaptarse el diseño propuesta para que la salida del sumador muestre el resultado en sistema decimal y no en sistema hexadecimal?
+**4. Si se quisiera realizar la implementación del sumador/restador de 4 bits, que cambios deberian hacerse al diseño implementado en la segunda parte de este laboratorio? Explique mediante diagrama de caja negra.**
+
+
+
+
+
+   
+**5. ¿Como debería adaptarse el diseño propuesta para que la salida del sumador muestre el resultado en sistema decimal y no en sistema hexadecimal?**
+
+
 
 
 ## Conclusiones
