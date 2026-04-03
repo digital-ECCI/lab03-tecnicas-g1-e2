@@ -106,7 +106,7 @@ endcase
 ## Simulaciones 
 **Descripción**
 
-Se realizaron simulaciones en un entorno como ModelSim para verificar:
+Se realizaron simulaciones utilizando GTKWave junto con Icarus Verilog para verificar:
 
 Correcta visualización de números 0–F
 Funcionamiento del sumador de 3 bits
