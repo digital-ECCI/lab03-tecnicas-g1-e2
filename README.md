@@ -133,7 +133,7 @@ La simulación muestra que el sistema responde correctamente a las entradas, gen
 * **Resultado en display**
 
 
-Figura 2. Visualización del resultado en el display de 7 segmentos.
+***Figura 2. Visualización del resultado en el display de 7 segmentos.***
 
 * **Video**
 
@@ -192,16 +192,15 @@ Esto se logra modificando el **case** del decodificador.
 
 ## Conclusiones
 
-Durante el desarrollo del laboratorio se logró implementar correctamente un decodificador binario a 7 segmentos, cumpliendo con el objetivo de representar valores en formato hexadecimal y visualizar resultados de operaciones aritméticas en la FPGA DE10-Lite.
+Durante el desarrollo del laboratorio se logró implementar un decodificador binario a 7 segmentos utilizando lenguaje Verilog, cumpliendo con el objetivo de representar valores decimales (0–9) en un display de la FPGA DE10-Lite.
 
-El sistema diseñado presentó un funcionamiento adecuado tanto en simulación como en la implementación física, evidenciando coherencia entre los resultados teóricos y experimentales. La utilización de estructuras como `case` en Verilog permitió modelar de manera eficiente el comportamiento del decodificador.
+El diseño se basó en el uso de un bloque `always` combinado con una estructura `case`, lo cual permitió asignar de manera clara y ordenada los patrones de salida para cada valor de entrada. El sistema presentó un funcionamiento correcto en simulación y en la implementación física, evidenciando que las combinaciones binarias de entrada se traducen adecuadamente en la activación de los segmentos del display.
 
-Sin embargo, durante el proceso se identificaron algunas dificultades, principalmente relacionadas con la correcta asignación de los segmentos del display debido a su configuración de ánodo común, lo que obligó a invertir la lógica de activación. Asimismo, se presentaron retos en la organización del código y en la verificación de todas las combinaciones posibles de entrada.
+Durante el proceso se identificaron algunas dificultades, principalmente en la correcta configuración de los valores binarios de salida (`seg`), debido a que el display utilizado es de ánodo común, lo que implica trabajar con lógica invertida. Esto requirió ajustes y validación cuidadosa para asegurar que cada número se mostrara correctamente.
 
-Como limitación, se observa que el sistema implementado depende de una tabla fija de correspondencia, lo que puede dificultar su escalabilidad si se desean representar más símbolos o integrar funcionalidades adicionales.
+Como limitación del diseño, se observa que el decodificador solo contempla valores del 0 al 9, mientras que los demás casos se manejan mediante la condición `default`, lo que restringe la representación completa de valores hexadecimales (A–F). Esto indica que el sistema podría ampliarse para soportar más caracteres.
 
-En conclusión, el laboratorio permitió afianzar conceptos fundamentales de diseño digital, como la representación de datos, el uso de lógica combinacional y la implementación en hardware, fortaleciendo las habilidades en el uso de Verilog y en el proceso de validación mediante simulación e implementación física.
-
+En conclusión, el laboratorio permitió fortalecer la comprensión de la lógica combinacional, el uso de estructuras de control en Verilog y la implementación de sistemas digitales en FPGA, evidenciando la importancia de la simulación y verificación en el desarrollo de hardware.
 
 ## Referencias
 * Guía del laboratorio – Técnicas Digitales
