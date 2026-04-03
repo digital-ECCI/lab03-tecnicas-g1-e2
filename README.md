@@ -158,28 +158,52 @@ La estructura que modela un multiplexor en Verilog es el bloque:
 ```verilog 
 case
 ```
-También puede implementarse mediante operadores condicionales (if-else).
+También puede implementarse mediante operadores condicionales **(if-else).**
 
 **3. ¿Qué tipo de display usa la tarjeta de desarrollo DE10-Lite (ánodo común o cátodo común) y cómo afecta eso al diseño?**
 
+La DE10-Lite utiliza un display de ánodo común, lo que implica que:
 
+* Los segmentos se activan con **0**
+* Se deben invertir las salidas del decodificador
 
    
 **4. Si se quisiera realizar la implementación del sumador/restador de 4 bits, que cambios deberian hacerse al diseño implementado en la segunda parte de este laboratorio? Explique mediante diagrama de caja negra.**
 
+Se deben realizar los siguientes cambios:
 
+* Ampliar el tamaño de los operandos a 4 bits
+* Ajustar el decodificador para manejar resultados más grandes
+* Incorporar lógica de selección (suma/resta)
 
 
 
    
 **5. ¿Como debería adaptarse el diseño propuesta para que la salida del sumador muestre el resultado en sistema decimal y no en sistema hexadecimal?**
 
+Para representar ambos sistemas:
+
+* **Decimal:** limitar salidas a 0–9
+* **Hexadecimal:** incluir valores A–F
+
+Esto se logra modificando el **case** del decodificador.
 
 
 
 ## Conclusiones
 
-<!-- En esta sección se debe presentar un análisis crítico de los resultados obtenidos y del proceso de diseño e implementación realizado. Este apartado debe incluir una reflexión sobre el cumplimiento de los objetivos planteados, el funcionamiento del sistema desarrollado, así como el análisis de posibles errores, limitaciones o dificultades encontradas durante la práctica.  -->
+Durante el desarrollo del laboratorio se logró implementar correctamente un decodificador binario a 7 segmentos, cumpliendo con el objetivo de representar valores en formato hexadecimal y visualizar resultados de operaciones aritméticas en la FPGA DE10-Lite.
+
+El sistema diseñado presentó un funcionamiento adecuado tanto en simulación como en la implementación física, evidenciando coherencia entre los resultados teóricos y experimentales. La utilización de estructuras como `case` en Verilog permitió modelar de manera eficiente el comportamiento del decodificador.
+
+Sin embargo, durante el proceso se identificaron algunas dificultades, principalmente relacionadas con la correcta asignación de los segmentos del display debido a su configuración de ánodo común, lo que obligó a invertir la lógica de activación. Asimismo, se presentaron retos en la organización del código y en la verificación de todas las combinaciones posibles de entrada.
+
+Como limitación, se observa que el sistema implementado depende de una tabla fija de correspondencia, lo que puede dificultar su escalabilidad si se desean representar más símbolos o integrar funcionalidades adicionales.
+
+En conclusión, el laboratorio permitió afianzar conceptos fundamentales de diseño digital, como la representación de datos, el uso de lógica combinacional y la implementación en hardware, fortaleciendo las habilidades en el uso de Verilog y en el proceso de validación mediante simulación e implementación física.
 
 
 ## Referencias
+* Guía del laboratorio – Técnicas Digitales
+* Documentación Intel FPGA
+* Material de clase
