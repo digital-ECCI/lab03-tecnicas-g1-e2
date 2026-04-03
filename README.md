@@ -114,7 +114,7 @@ Correspondencia entre entrada binaria y salida del display
 
 **Evidencia**
 
-  <img src="documentacion/simulaciongtk.jpeg" width="700">
+  <img src="documentacion/simulaciongtk.jpeg" width="900">
 
 
 
