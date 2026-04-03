@@ -85,8 +85,8 @@ En la tarjeta DE10-Lite se utiliza configuración de ánodo común, lo que impli
 
 El decodificador se implementa mediante:
 
-* Bloque always
-* Estructura case
+* Bloque **always**
+* Estructura **case**
 * Salida de 7 bits (a–g)
 
 Ejemplo conceptual:
