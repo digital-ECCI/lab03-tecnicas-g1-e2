@@ -114,11 +114,11 @@ Correspondencia entre entrada binaria y salida del display
 
 **Evidencia**
 
+  <img src="documentacion/simulaciongtk.jpeg" width="700">
 
 
 
-
-La simulación muestra que el sistema responde correctamente a las entradas, generando la salida adecuada para cada número representado.
+***Se observa que la señal bin recorre los valores de 0 a 15, mientras que la salida seg cambia al valor de entrada, mostrando correctamente los dígitos del 0 al 9 y activando el caso default para valores mayores.***
 
 ## Evidencias de implementación
 
