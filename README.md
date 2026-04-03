@@ -205,6 +205,6 @@ Como limitación del sistema, se identificó que el diseño únicamente contempl
 En conclusión, el laboratorio permitió fortalecer la comprensión de los sistemas digitales combinacionales, el uso de descripciones en Verilog y la importancia de la simulación como herramienta de validación. Asimismo, se resalta la relevancia de considerar las características físicas del hardware al momento de implementar soluciones digitales, integrando de manera efectiva el diseño teórico con su ejecución práctica.
 
 ## Referencias
-* Guía del laboratorio – Técnicas Digitales
-* Documentación Intel FPGA
-* Material de clase
+* Guía del laboratorio – Técnicas Digitales, Universidad ECCI  
+* Documentación Intel FPGA  
+* Manual de Icarus Verilog y GTKWave  
