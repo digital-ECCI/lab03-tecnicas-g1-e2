@@ -1,5 +1,4 @@
 `timescale 1ns/1ps
-`include "segmentos.v"
 
 module tb_segmentos;
 
