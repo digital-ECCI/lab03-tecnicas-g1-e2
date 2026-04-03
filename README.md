@@ -54,7 +54,7 @@ El resultado puede representarse en:
 * Decimal
 * Hexadecimal
 
-* **Fundamento teórico**
+**Fundamento teórico**
 
 **Código BCD**
 
