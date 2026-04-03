@@ -124,7 +124,7 @@ Correspondencia entre entrada binaria y salida del display
 
 * **Montaje en FPGA**
 
-  <img src="documentacion/implementacion.jpeg" width="400">
+  <img src="documentacion/implementacion.jpeg" width="300">
 
 
 ***Figura 1. Implementación del sistema en la FPGA DE10-Lite.***
@@ -132,7 +132,7 @@ Correspondencia entre entrada binaria y salida del display
 
 * **Resultado en display**
 
-  <img src="documentacion/implementacion2.jpeg  " width="400">
+  <img src="documentacion/implementacion2.jpeg  " width="300">
 
 ***Figura 2. Visualización del resultado en el display de 7 segmentos.***
 
