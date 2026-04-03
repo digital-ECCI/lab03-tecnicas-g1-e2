@@ -124,7 +124,7 @@ La simulación muestra que el sistema responde correctamente a las entradas, gen
 
 * **Montaje en FPGA**
 
-
+  <img src="documentacion/implementacion.jpeg" width="400">
 
 
 ***Figura 1. Implementación del sistema en la FPGA DE10-Lite.***
@@ -132,13 +132,15 @@ La simulación muestra que el sistema responde correctamente a las entradas, gen
 
 * **Resultado en display**
 
+  <img src="documentacion/implementacion2.jpeg  " width="400">
 
 ***Figura 2. Visualización del resultado en el display de 7 segmentos.***
 
 * **Video**
 
+[Ver video de funcionamiento / Parte1](https://youtube.com/shorts/k2-qjs-qY5c)
 
-
+[Ver video de funcionamiento / Parte 2](https://youtube.com/shorts/spV5hhUNHow)
 
 ## Preguntas
 
